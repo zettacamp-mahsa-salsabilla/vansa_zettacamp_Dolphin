@@ -1,0 +1,152 @@
+.header{
+    position:fixed;
+    background-color: cadetblue;
+    color: white;
+    width:100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 12px 0px 12px 12px;
+    text-align:center;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.footer{
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    bottom: 0;
+    background-color: cadetblue;
+    color: white;
+    width:100%;
+    height: 50px;
+    margin-top: 80px;
+    padding: 20px 20px 20px 20px;
+    text-align:center;
+    letter-spacing: 2px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    background-color: white;
+    padding: 0.6rem;
+    border: 0.2rem solid white;
+    box-shadow: 10px;
+    margin-top: 150px;
+    width:100vw
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+}
+
+.link {
+    color: white;
+    font-size: 18px;
+}
+
+video {
+    width: 100vw;
+}
+
+.videoiframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    video{
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+/**about me
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: cadetblue;
+}
+
+.all-browsers>h1,
+.browser {
+    margin: 10px;
+    padding: 5px;
+}
+
+.browser {
+    background: white;
+}
+
+.browser>h2,
+p {
+    margin: 4px;
+    font-size: 90%;
+}**/
+
+.mb-0{
+    margin-bottom: 0px;
+}
+
+.mt-0{
+    margin-top: 0px;
+}
+
+.ms-1{
+    margin:1rem 0rem;
+}
+
+.header>.container1{
+    margin: 0px;
+}
+
+.container1>.container2{
+    margin: 16px;
+}
+
+.container2>.container3{
+    margin: 16px;
+}
+
+.container3{
+    margin: 0px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.grid > article{
+    box-shadow: 0px 5px 5px 0px black;
+    border-radius: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 300px;
+    transition: transform;
+}
+
+.grid > article img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+
+}
