@@ -1,0 +1,11 @@
+body{
+    background-color: darkslategray;
+}
+
+*{
+    color: aliceblue;
+}
+
+#Update{
+    display: none;
+}

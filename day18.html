@@ -1,0 +1,89 @@
+<!-- Book Inventory -->
+<html>
+    <head>
+        <title> Book Inventory</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+        <div class="container">
+            <h2 class ="mt-5 mb-5"> Book Inventory</h2>
+            <div class="mb-5">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="nameBook">Name Book</label>
+                        <input 
+                        type="text" 
+                        name="nameBook" 
+                        class="form-control"
+                        id="nameBook" 
+                        placeholder="Enter Name Book"
+                        />
+                    </div>
+
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="totalCount">Total Count</label>
+                        <input 
+                        type="number" 
+                        name="totalCount" 
+                        class="form-control"
+                        id="totalCount" 
+                        placeholder="Enter Count Book"
+                        />
+                    </div>
+
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="authorBook">Author Book</label>
+                        <input 
+                        type="text" 
+                        name="authorBook" 
+                        class="form-control"
+                        id="authorBook" 
+                        placeholder="Enter Name Author"
+                        />
+                    </div>
+
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="descriptionBook">Description Book</label>
+                        <input 
+                        type="text" 
+                        name="descriptionBook" 
+                        class="form-control"
+                        id="descriptionBook" 
+                        placeholder="Enter Description Book"
+                        />
+                    </div>
+
+                    <div class="col-lg-12 mt-5">
+                        <button class="btn btn-success" id="Submit"
+                        onclick="addData()">Add Book</button>
+
+                        <button class="btn btn-primary" id="Update">
+                        Update </button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <table class="table table_bordered" id="bookTable">
+                        <thead>
+                            <tr>
+                                <th>Name Book</th>
+                                <th>Total Count</th>
+                                <th>Author Book</th>
+                                <th>Description Book</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src ="script.js"></script>
+    </body>
+</html>
